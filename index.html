@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  
+  
+  <title>Login | finango</title>
+  
+</head>
+<div class="container">
+    <div class="painel">
+      <h1>Bem-vindo ao <span><img src="assets/finango - logo.png" alt="" class="logo"></span></h1>
+      <p>Gerencie suas finanças com inteligência</p>
+    </div>
+
+    <div class="login-form">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="name">Nome</label>
+        <input type="text" id="name" placeholder="Nome" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email" required>
+
+        <label for="password">Senha</label>
+        <div class="password-container">
+          <input type="password" id="password" placeholder="••••••••" required>
+          <span id="togglePassword" onclick="passwordVisibility()">👁</span>
+        </div>
+
+        <button type="submit" id="btn-login">Entrar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

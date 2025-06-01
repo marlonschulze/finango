@@ -1,0 +1,19 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 ;
+}
+
+.mensagem{
+  text-align: center;
+  padding: 30px;
+  border: 2px dashed #ffa500;
+  background-color: #fff3cd;
+  color: #856404;
+  max-width: 400px;
+  border-radius: 10px;
+}
