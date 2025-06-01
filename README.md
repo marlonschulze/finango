@@ -3,7 +3,8 @@
 **Finango** é um sistema financeiro fictício, desenvolvido apenas com **HTML**, **CSS** e **JavaScript**, com fins de estudo e prática de front-end.  
 A proposta é simular a interface de um sistema de controle financeiro pessoal, com foco em organização visual, usabilidade e responsividade.
 
-> ⚠️ **Atenção:** Este projeto ainda está em desenvolvimento e novas funcionalidades serão adicionadas em breve.
+> ⚠️ **Aviso:** Este projeto está em desenvolvimento. Novas funcionalidades serão adicionadas em breve.  
+> 🛑 **Importante:** Nenhum dado real foi utilizado neste sistema. Todas as informações são fictícias e criadas apenas para fins educacionais.
 
 ---
 
@@ -56,8 +57,6 @@ Foi criado com o objetivo de:
 
 ---
 
-
-
 ## 🚀 Como visualizar o projeto
 
-Acesse o link:
+Acesse o link: 
