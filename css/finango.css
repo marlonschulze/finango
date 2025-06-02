@@ -8,12 +8,287 @@ body{
   margin: 0 ;
 }
 
+body.blur-content > *:not(.mensagem) {
+  filter: blur(5px);
+  pointer-events: none;
+  user-select: none;
+}
+
+/*aviso de manutenção ou desenvolvimento*/
 .mensagem{
+  position: fixed;
+  z-index: 1000;
   text-align: center;
   padding: 30px;
   border: 2px dashed #ffa500;
-  background-color: #fff3cd;
+  background-color: #f1f1f1;
   color: #856404;
   max-width: 400px;
   border-radius: 10px;
+}
+
+/*finango app pag principal*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body, html{
+  background-color: rgb(31, 31, 31);
+  color: white;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+header{
+  height: 70px;
+  width: 100%;
+  background: rgba(31, 31, 31, 0.2);
+  position: absolute;
+  display: flex;
+  padding: 20px 40px;
+  margin-top: -800px;
+}
+
+.hamburger {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  margin: 0px;
+  z-index: 10;
+}
+
+.hamburger span {
+  background: #8f94fb;
+  display: block;
+  height: 3px;
+  margin: 5px 0;
+  transition: 0.4s;
+  border-radius: 2px;
+}
+
+.hamburger span:hover{
+  background-color: #4e54c8;
+}
+
+/* Animação para X */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+/*menu*/
+.menu {
+  display: none;
+  flex-direction: column;
+  background: #1f1f1f;
+  position: absolute;
+  height: 95vh;
+  width: 250px;
+  top: 70px;
+  left: 0px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 999;
+  transform: translateX(-20px);
+}
+
+.menu ul{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.menu ul li{
+  list-style: none;
+  width: 100%;
+}
+
+.menu ul li i{
+  color: #8f94fb;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  transition: background 0.3s;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: block;
+  font-size: 20px;
+}
+
+.menu a:hover {
+  background-color: #8f94fb;
+  border-radius: 8px;
+  
+}
+
+.menu.show {
+  display: flex;
+  z-index: 100;
+  transform: translateX(0);
+}
+
+.logo-header{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 250px;
+}
+
+.logout{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(230, 57, 70, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+.logout-icon {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  transition: transform 0.3s ease;
+}
+
+.logout-btn:hover .logout-icon {
+  transform: translateX(4px);
+}
+
+.logout:hover{ 
+  background-color: #d62828;
+  box-shadow: 0 8px 20px rgba(214, 40, 40, 0.7);
+  transform: translateY(-2px);
+}
+
+@media screen and (min-width: 768px){
+  header{
+    width: 100%;
+  }
+
+  .hamburger{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+    height: 90vh;
+    width: 290px;
+  }
+
+  .menu ul{
+    margin-left: 10px;
+  }
+}
+
+/*welcome*/
+.welcome{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  margin-top: 200px;
+  text-align: center;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  margin-top: -200px;
+}
+
+@keyframes fadeInUp{
+  from{
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo-welcome{
+  height: 300px;
+  width: 300px;
+  margin-top: -100px;
+  margin-bottom: -100px;
+}
+
+.welcome h2{
+  font-size: 35px;
+  color: #8f94fb;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.welcome p{
+  font-size: 26px;
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #8f94fb;
+}
+
+.btn-welcome{
+  text-decoration: none;
+  width: 100%;
+  padding: 8px;
+  background-color: #4e54c8;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+.btn-welcome:hover{
+  background-color: #3b3fc1;
+}
+
+@media (min-width: 768px){
+  .welcome{
+    flex-direction: column;
+    width: 500px;
+    left: 300px;
+    margin: 0 auto;
+    margin-top: 200px;
+  }
+
+  .welcome h2{
+    font-size: 40px;
+  }
+
+  .welcome p{
+    margin-top: 30px;
+  }
 }

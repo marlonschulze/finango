@@ -15,7 +15,8 @@
   const passwordCorrect = localStorage.getItem('password');
 
   if(user === userCorrect && email === emailCorrect && password === passwordCorrect){
-    window.location.href = 'html/finango.html';
+    localStorage.setItem('logado', 'true');
+    window.location.href = 'finango.html';
   } else{
       alert(`Login attempt failed. 
         Try again!`);
@@ -29,9 +30,9 @@ function passwordVisibility(){
 
   if(passwordNotVisible.type === "password"){
     passwordNotVisible.type = "text";
-    eyeIcon.innerHTML = "🕶️";
+    eyeIcon.innerHTML = "👁";
   } else{
     passwordNotVisible.type = "password";
-    eyeIcon.innerHTML = "👁"
+    eyeIcon.innerHTML = "🕶️"
   }
 }

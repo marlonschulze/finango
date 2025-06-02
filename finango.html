@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <title>finango</title>
+
+ <link rel="stylesheet" href="../css/finango.css">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+<body class="blur-content">
+  
+    <div class="mensagem">
+      <h2>🚧 Sistema em desenvolvimento</h2>
+      <p>Ainda estamos trabalhando nesta parte do sistema. Em breve, mais funcionalidades estarão disponíveis.</p>
+    </div> 
+  
+  <header>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <img src="/assets/finango - logo.png" alt="" class="logo-header">
+
+    <button id="logout" class="logout">
+      <svg xmlns="http://www.w3.org/2000/svg" class="logout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+        <polyline points="16 17 21 12 16 7"/>
+        <line x1="21" y1="12" x2="9" y2="12"/>
+      </svg>
+    </button>
+  </header>
+
+  <nav id="menu" class="menu hidden" aria-hidden="true">
+    <ul>
+       <li><a href="finango.html"><i class="fas fa-home"></i> Início</a></li>
+       <li><a href="transacoes.html"><i class="fas fa-wallet"></i> Transações</a></li>
+       <li><a href="#"><i class="fas fa-bullseye"></i> Metas</a></li>
+       <li><a href="#"><i class="fas fa-calendar-alt"></i> Planejamentos</a></li>
+       <li><a href="#"><i class="fas fa-chart-pie"></i> Relatórios</a></li>
+       <li><a href="#"><i class="fas fa-lightbulb"></i> Educação Financeira</a></li>
+       <li><a href="#"><i class="fas fa-cogs"></i> Configurações</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="welcome">
+      <h2>Bem-vindo ao <span><img src="/assets/finango - logo.png" alt="finango" class="logo-welcome"></span></h2>
+      <p>Organize suas finanças, controle seus gastos e alcance suas metas</p>
+      <a href="transacoes.html" class="btn-welcome">Começar</a>
+    </section>
+  </main>
+
+  <script src="../js/finango.js"></script>
+</body>
+</html>
