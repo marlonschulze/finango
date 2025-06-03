@@ -9,11 +9,11 @@ body{
 }
 
 
-body.blur-content > *:not(.mensagem) {
+/*body.blur-content > *:not(.mensagem) {
   filter: blur(5px);
   pointer-events: none;
   user-select: none;
-}
+}*/
 
 /*aviso de manutenção ou desenvolvimento*/
 .mensagem{
