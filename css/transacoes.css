@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body, html{
+  background-color: rgb(31, 31, 31);
+  color: white;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+header{
+  height: 70px;
+  width: 100%;
+  background: rgba(31, 31, 31, 0.2);
+  position: fixed;
+  display: flex;
+  padding: 20px 40px;
+  top: 0;
+  color: #8f94fb;
+}
+
+header h1{
+  font-size: 25px;
+}
+
+.voltar-inicio{
+  position: relative;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #8f94fb;
+  color: white;
+  border: none;
+  top: 5px;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(45, 57, 70, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+.voltar-icon {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  transition: transform 0.3s ease;
+}
+
+.voltar-inicio-btn:hover .voltar-icon {
+  transform: translateX(4px);
+}
+
+.voltar-inicio:hover{ 
+  background-color: #4e54c8;
+  box-shadow: 0 8px 20px #8f94fb;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px){
+  header h1{
+    font-size: 30px;
+  }
+}
+
+/*pag*/
+main{
+  padding: 20px;
+  position: absolute;
+  top: 100px;
+}
+
+/*section dos valores*/
+.valores{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  width: 100vw;
+}
+
+.caixa{
+  background: #fff;
+  border-radius: 5px;
+  padding: 15px;
+  flex: 1;
+  background-color: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 5px;
+  text-align: center;
+}
+
+.entrada{background-color: green;}
+.saida{background-color: red;}
+.saldo{background-color: #4e54c8;}
+
+/*botoes*/
+.botoesES{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button{
+  margin: 0 20px;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-entrada{
+  background-color: green;
+  color: white;
+}
+.btn-saida{
+  background-color: red;
+  color: white;
+}
+
+/*histórico*/
+.lista-transacoes{
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  color: #4e54c8;
+}
+
+#listaTransacoes li{
+  color: black;
+  list-style: none;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}

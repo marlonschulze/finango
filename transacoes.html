@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/transacoes.css">
+
+
+  <title>Transações | finango</title>
+</head>
+<body>
+  <header>
+    <h1>Minhas Transações</h1>
+
+    <button class="voltar-inicio" id="voltarInicio">
+      <svg xmlns="http://www.w3.org/2000/svg" class="voltar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+        <polyline points="16 17 21 12 16 7"/>
+        <line x1="21" y1="12" x2="9" y2="12"/>
+      </svg>
+    </button>
+  </header>
+
+  <main>
+    <section class="valores">
+      <div class="caixa entrada">
+        <h3>Entrada</h3>
+        <p id="entrada-valor">R$ 0,00</p>
+      </div>
+
+      <div class="caixa saida">
+        <h3>Saída</h3>
+        <p id="saida-valor" >R$ 0,00</p>
+      </div>
+
+      <div class="caixa saldo">
+        <h3>Saldo</h3>
+        <p id="saldo-valor">R$ 0,00</p>
+      </div>
+    </section>
+
+    <section class="botoesES">
+      <button onclick="adicionarValor()" class="button btn-entrada">+ Adicionar Valor</button>
+      <button onclick="removerValor()" class="button btn-saida" >- Remover Valor</button>
+    </section>
+
+    <section class="lista-transacoes">
+      <h2>Histórico</h2>
+      <ul id="listaTransacoes">
+
+      </ul>
+    </section>
+  </main>
+
+
+  <script src="js/transacoes.js"></script>
+</body>
+</html>
