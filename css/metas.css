@@ -1,0 +1,172 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body, html{
+  background-color: rgb(31, 31, 31);
+  color: white;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+header{
+  height: 70px;
+  width: 100%;
+  background: rgba(31, 31, 31, 0.2);
+  position: fixed;
+  display: flex;
+  padding: 20px 40px;
+  top: 0;
+  color: #8f94fb;
+}
+
+header h1{
+  font-size: 25px;
+}
+
+.voltar-inicio{
+  position: relative;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #8f94fb;
+  color: white;
+  border: none;
+  top: 5px;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(45, 57, 70, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+.voltar-icon {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  transition: transform 0.3s ease;
+}
+
+.voltar-inicio-btn:hover .voltar-icon {
+  transform: translateX(4px);
+}
+
+.voltar-inicio:hover{ 
+  background-color: #4e54c8;
+  box-shadow: 0 8px 20px #8f94fb;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px){
+  header h1{
+    font-size: 30px;
+  }
+}
+
+/*metas*/
+.metas{
+  max-width: 400px;
+  margin: 20px;
+  text-align: center;
+  margin-top: -100px;
+}
+
+.metas h3{
+  color: #4e54c8;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.metas button:hover{
+  background-color: #8f94fb;
+  cursor: pointer;
+  color: white;
+}
+
+input, .button{
+  margin: 5px 0;
+  padding: 8px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#metaExibir{
+  margin-top: 20px;
+  border: 2px solid #8f94fb;
+  background-color: #f9f9f9;
+  color: black;
+  text-align: start;
+  padding: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 2px;
+  margin-bottom: 10px;
+  border: 1.5px solid #ccc;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus{
+  border-color: #4e54c8;
+  outline: none;
+  box-shadow: 0 0 8px #4e54c8aa;
+}
+
+#metaExibir button:hover{
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+/*alerta*/
+#alerta{
+  position: fixed;
+  top: -30px;
+  display: none;
+  padding: 15px;
+  background-color: #8f94fb;
+  border: 1px solid #4e54c8;
+  color: #4e54c8;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#alerta span{
+  font-size: 26px;
+  color: white;
+}
+
+#alerta button{
+  margin-left: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#alerta button:hover{
+  cursor: pointer;
+  background-color: #4e54c8;
+  color: white;
+  border-radius: 5px;
+}

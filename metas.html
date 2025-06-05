@@ -20,8 +20,37 @@
       </svg>
     </button>
   </header>
+  <main>
+    <section class="metas">
+      <h3>Criar nova meta</h3>
 
+      <input type="text" id="nameMeta" placeholder="Nome da meta" required>
+      <input type="date" id="dataMeta">
+      <input type="number" id="valorMeta" placeholder="Valor da meta" required>
+      <button onclick="criarMeta()" class="button">Criar Meta</button>
 
+      <div id="metaExibir"> 
+        <h3 id="tituloMeta"></h3>
+        <p><strong>Valor total: </strong>R$ <span id="valorTotal"></span></p>
+        <p><strong>Data limite: </strong><span id="dataLimite"></span></p>
+        <p><strong>Valor guardado: </strong>R$ <span id="valorPoupado">0</span></p>
+        <p><strong>Valor restante: </strong>R$ <span id="valorResta"></span></p>
+
+        <input type="number" id="valorContribuir" placeholder="Valor da contribuição">
+        <button onclick="contribuirValorMeta()" class="button">Contribuir</button>
+      </div>
+
+      <div id="alerta">
+        <span id="alertaMensagem">Saldo insuficiente!</span>
+        <a href="transacoes.html">
+          <button class="button">Ver saldo</button>
+        </a>
+        <button onclick="fecharAlerta()" class="button">Fechar</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/transacoes.js"></script>
   <script src="js/metas.js"></script>
 </body>
 </html>
