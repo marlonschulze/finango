@@ -34,12 +34,14 @@ function criarMeta(){
 function exibirMetaSalva(){
   if(!nameMeta || valorMeta <= 0) return;
 
+  const porcent = (valorPoupado / valorMeta) * 100;
 
   document.getElementById('tituloMeta').textContent = nameMeta;
   document.getElementById('valorTotal').textContent = valorMeta.toFixed(2);
   document.getElementById('dataLimite').textContent = dataMeta;
   document.getElementById('valorPoupado').textContent = valorPoupado.toFixed(2);
   document.getElementById('valorResta').textContent = (valorMeta - valorPoupado).toFixed(2);
+  document.getElementById('porcentagem').textContent = porcent.toFixed(2) + "%";
 }
 
 //contribuir meta
@@ -119,4 +121,5 @@ function removerMeta(){
   document.getElementById('dataLimite').textContent = "";
   document.getElementById('valorPoupado').textContent = "0";
   document.getElementById('valorResta').textContent = "";
+  document.getElementById('porcentagem').textContent = "";
 }
