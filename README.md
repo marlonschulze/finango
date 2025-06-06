@@ -32,6 +32,20 @@ A interface conta com tela de login, e uma área principal que **ainda está em 
 
 ---
 
+## Sobre os links externos
+
+Este projeto utiliza links para ferramentas e serviços externos, como:
+
+- Mobills (app para controle financeiro)
+- Google Sheets (planilhas online)
+- Outros recursos complementares
+
+Esses links são abertos em nova aba para não interromper a navegação no sistema.
+
+Lembre-se que a disponibilidade desses serviços depende dos respectivos sites externos.
+
+---
+
 ## 🚧 Funcionalidades
 
 ### ✅ Já implementadas:
