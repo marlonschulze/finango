@@ -13,9 +13,8 @@ body{
 }
 
 body, html{
-  background-color: rgba(31, 31, 31, 0.2);
+  background-color: rgb(31, 31, 31);
   color: white;
-  overflow-y: hidden;
   overflow-x: hidden;
 }
 
@@ -76,4 +75,65 @@ header h1{
   header h1{
     font-size: 30px;
   }
+}
+
+section{
+  margin-top: 630px;
+}
+
+/*cards*/
+.container{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 20px;
+ 
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  background-color: rgb(156, 156, 156);
+  border: 2px solid;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(31, 31, 31, 0.2);
+  transition: transform 0.2s;
+  text-align: center; 
+  justify-content: space-between;
+}
+
+.cards h3{
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  color: #4e54c8;
+}
+
+.cards p{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 5px;
+  color: #4e54c8;
+}
+
+.cards button{
+  background: 007bff;
+  border: none;
+  padding: 5px 8px;
+  font-size: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.cards button:hover{
+  background: #4e54c8;
+  color: white;
+  cursor: pointer;
+  border: 2px solid white
 }
