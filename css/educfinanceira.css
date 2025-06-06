@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body, html{
+  background-color: rgba(31, 31, 31, 0.2);
+  color: white;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+
+header{
+  height: 70px;
+  width: 100%;
+  background: rgba(31, 31, 31, 0.2);
+  position: fixed;
+  display: flex;
+  padding: 20px 40px;
+  top: 0;
+  color: #8f94fb;
+}
+
+header h1{
+  font-size: 25px;
+}
+
+.voltar-inicio{
+  position: relative;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #8f94fb;
+  color: white;
+  border: none;
+  top: 5px;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(45, 57, 70, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+.voltar-icon {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  transition: transform 0.3s ease;
+}
+
+.voltar-inicio-btn:hover .voltar-icon {
+  transform: translateX(4px);
+}
+
+.voltar-inicio:hover{ 
+  background-color: #4e54c8;
+  box-shadow: 0 8px 20px #8f94fb;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px){
+  header h1{
+    font-size: 30px;
+  }
+}

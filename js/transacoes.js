@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //entrada e saida
-
+  
 let entrada = 0;
 let saida = 0;
 let transacoes  =[]
