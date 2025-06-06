@@ -94,7 +94,7 @@ section{
   display: flex;
   flex-direction: column;
   max-height: 300px;
-  background-color: rgb(156, 156, 156);
+  background-color: rgb(223, 223, 223);
   border: 2px solid;
   padding: 20px;
   border-radius: 8px;
@@ -129,11 +129,37 @@ section{
   font-size: 15px;
   margin-top: 15px;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(31, 31, 31, 0.5);
 }
 
 .cards button:hover{
   background: #4e54c8;
   color: white;
   cursor: pointer;
-  border: 2px solid white
+}
+
+@media (min-width: 768px) {
+  section{
+    margin-top: 50px;
+  }
+
+  .container{
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cards{
+    height: 250px;
+  }
+
+  .cards h3{
+    font-size: 22px;
+  }
+
+  .cards p{
+    font-size: 19px;
+  }
+
+  .cards button{
+    font-size: 18px;
+  }
 }
