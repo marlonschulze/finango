@@ -66,81 +66,34 @@ header h1{
   transform: translateY(-2px);
 }
 
-.inicio{
-  margin-top: 80px;
+section{
+  margin-top: 70px;
 }
 
-a.back-link {
-  display: inline-block;
-  margin-bottom: 20px;
-  text-decoration: none;
+h1{
   color: #8f94fb;
-  font-weight: bold;
-}
-   
-a.back-link:hover {
-  text-decoration: underline;
-}
- 
-h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
 }
 
-.meta {
-  color: #888;
-  font-size: 0.9rem;
-  margin-bottom: 30px;
-}
-
-section {
-  margin-bottom: 40px;
-}
-
-h2 {
-  margin-top: 30px;
-  margin-bottom: 15px;
+h2{
   color: #4e54c8;
 }
 
-p {
-  margin-bottom: 15px;
+p{
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
-ul{
+.container {
+  padding: 30px;
+  border-radius: 10px;
+}
+        
+ul {
+  margin-left: 20px;
+}
+
+li{
   list-style: none;
-}
-    
-ul, ol {
-  margin-left: 20px;
+  margin-top: 5px;
   margin-bottom: 15px;
-}
-  
-blockquote {
-  margin-left: 20px;
-  padding-left: 15px;
-  border-left: 4px solid #4e54c8;
-  color: #555;
-  font-style: italic;
-  margin-bottom: 20px;
-}
-    
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-    
-th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-}
-    
-th {
-  background: #f0f8ff;
-}
-
-a{
-  color: #8f94fb;
 }
