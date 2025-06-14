@@ -46,11 +46,13 @@ body, html{
 header{
   height: 70px;
   width: 100%;
-  background: rgba(31, 31, 31, 0.2);
   position: fixed;
   display: flex;
   padding: 20px 40px;
   top: 0;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .hamburger {
@@ -167,7 +169,7 @@ header{
   font-size: 13px;
   cursor: pointer;
   box-shadow: 0 6px 12px rgba(230, 57, 70, 0.5);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
   user-select: none;
 }
 
@@ -282,7 +284,6 @@ header{
     width: 500px;
     left: 300px;
     margin: 0 auto;
-    margin-top: 200px;
   }
 
   .welcome h2{

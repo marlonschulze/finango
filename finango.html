@@ -8,6 +8,7 @@
  <link rel="stylesheet" href="css/finango.css">
 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +23,7 @@
       <p>Ainda estamos trabalhando nesta parte do sistema. Em breve, mais funcionalidades estarão disponíveis.</p>
     </div>-->
   
-  <header>
+  <header data-aos="fade-down" data-aos-duration="1300">
     <div class="hamburger" id="hamburger">
       <span></span>
       <span></span>
@@ -39,7 +40,7 @@
     </button>
   </header>
 
-  <nav id="menu" class="menu hidden" aria-hidden="true">
+  <nav id="menu" class="menu hidden" aria-hidden="true" data-aos="fade-right" data-aos-duration="1200">
     <ul>
        <li><a href="finango.html"><i class="fas fa-home"></i> Início</a></li>
        <li><a href="transacoes.html"><i class="fas fa-wallet"></i> Transações</a></li>
@@ -49,7 +50,8 @@
   </nav>
 
   <main>
-    <section class="welcome">
+    <section class="welcome" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom">
       <h2>Bem-vindo ao <span><img src="assets/finango - logo.png" alt="finango" class="logo-welcome"></span></h2>
       <p>Organize suas finanças, controle seus gastos e alcance suas metas</p>
       <a href="transacoes.html" class="btn-welcome">Começar</a>
@@ -57,5 +59,9 @@
   </main>
 
   <script src="js/finango.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
