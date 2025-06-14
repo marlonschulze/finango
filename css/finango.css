@@ -1,3 +1,9 @@
+:root{
+  --background: #A3C9F9;
+  --color: #1E293B;
+  --hoverFocus: #3B82F6;
+}
+
 body{
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f8f9fa;
@@ -37,7 +43,7 @@ body{
 }
 
 body, html{
-  background-color: rgb(31, 31, 31);
+  background-color: var(--background);
   color: white;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -52,7 +58,7 @@ header{
   top: 0;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.4);
 }
 
 .hamburger {
@@ -65,7 +71,7 @@ header{
 }
 
 .hamburger span {
-  background: #8f94fb;
+  background: var(--color);
   display: block;
   height: 3px;
   margin: 5px 0;
@@ -74,7 +80,7 @@ header{
 }
 
 .hamburger span:hover{
-  background-color: #4e54c8;
+  background-color: var(--hoverFocus);
 }
 
 /* Animação para X */
@@ -93,13 +99,13 @@ header{
 .menu {
   display: none;
   flex-direction: column;
-  background: #1f1f1f;
+  background: var(--background);
   position: absolute;
   height: 95vh;
   width: 250px;
   top: 70px;
   left: 0px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
   padding: 10px;
   z-index: 999;
   transform: translateX(-20px);
@@ -120,12 +126,12 @@ header{
 }
 
 .menu ul li i{
-  color: #8f94fb;
+  color: var(--color);
 }
 
 .menu a {
   text-decoration: none;
-  color: white;
+  color: var(--color);
   padding: 5px 10px;
   transition: background 0.3s;
   font-family: "Poppins", sans-serif;
@@ -136,7 +142,8 @@ header{
 }
 
 .menu a:hover {
-  background-color: #8f94fb;
+  background-color: #3B82F6 ;
+  color: white;
   border-radius: 8px;
   
 }
@@ -186,7 +193,7 @@ header{
 
 .logout:hover{ 
   background-color: #d62828;
-  box-shadow: 0 8px 20px rgba(214, 40, 40, 0.7);
+  box-shadow: 0 8px 12px rgba(214, 40, 40, 0.7);
   transform: translateY(-2px);
 }
 
@@ -244,7 +251,7 @@ header{
 
 .welcome h2{
   font-size: 35px;
-  color: #8f94fb;
+  color: var(--color);
   font-family: "Kanit", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -256,17 +263,17 @@ header{
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: #8f94fb;
+  color: var(--color);
 }
 
 .btn-welcome{
   text-decoration: none;
   width: 100%;
   padding: 8px;
-  background-color: #4e54c8;
+  background-color: var(--color);
   border: none;
   border-radius: 10px;
-  color: white;
+  color:var(--background);
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
@@ -275,7 +282,8 @@ header{
 }
 
 .btn-welcome:hover{
-  background-color: #3b3fc1;
+  background-color: var(--hoverFocus);
+  color: white;
 }
 
 @media (min-width: 768px){
