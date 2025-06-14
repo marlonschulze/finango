@@ -13,9 +13,10 @@ A proposta é simular a interface de um sistema de controle financeiro pessoal, 
 Este é um projeto **sem back-end**, criado para treinar habilidades em front-end.  
 A interface conta com tela de login, e uma área principal que **ainda está em construção**.
 
-Usuário: admin
-Email: admin123@gmail.com
-Senha: admin123
+- Usuário: admin
+
+- Email: admin123@gmail.com
+- Senha: admin123
 
 ---
 
