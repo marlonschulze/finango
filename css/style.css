@@ -1,3 +1,10 @@
+
+:root{
+  --background: #A3C9F9;
+  --color: #1E293B;
+  --hoverFocus: #3B82F6;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -20,8 +27,8 @@ body{
 }
 
 .painel{
-  background: linear-gradient(135deg, #4e54c8, #8f94fb);
-  color: white;
+  background-color: var(--hoverFocus);
+  color: var(--color);
   padding: 20px;
   border-radius: 12px;
   text-align: center;
@@ -42,11 +49,15 @@ body{
   font-size: 23px;
   opacity: 0.85;
   font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /*login*/
 .login-form{
-  background: white;
+  background: var(--background);
   padding: 10px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
@@ -54,7 +65,7 @@ body{
 
 .login-form h2{
   margin-bottom: 15px;
-  color: #4e54c8;
+  color: var(--color);
   font-weight: 600px;
   font-size: 30px;
   text-align: center;
@@ -64,7 +75,7 @@ form label{
   display: block;
   margin-bottom: 2px;
   font-weight: 600px;
-  color: #333;
+  color: var(--color);
 }
 
 input[type="text"],
@@ -73,7 +84,7 @@ input[type="email"] {
   width: 100%;
   padding: 2px;
   margin-bottom: 10px;
-  border: 1.5px solid #ccc;
+  border: 1.5px solid var(--hoverFocus);
   border-radius: 8px;
   font-size: 15px;
   transition: border-color 0.3s ease;
@@ -82,9 +93,9 @@ input[type="email"] {
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus{
-  border-color: #4e54c8;
+  border-color: var(--hoverFocus);
   outline: none;
-  box-shadow: 0 0 8px #4e54c8aa;
+  box-shadow: 0 0 8px var(--hoverFocus);
 }
 
 /*senha com botao*/
@@ -98,18 +109,18 @@ input[type="email"]:focus{
   cursor: pointer;
   user-select: none;
   font-size: 20px;
-  color: #555;
+  color: var(--color);
   transition: color 0.3s;
 }
 
 #togglePassword:hover{
-  color: #4e54c8;
+  color: var(--hoverFocus);
 }
 
 button{
   width: 100%;
   padding: 3px;
-  background-color: #4e54c8;
+  background-color: var(--color);
   border: none;
   border-radius: 10px;
   color: white;
@@ -120,7 +131,7 @@ button{
 }
 
 button:hover{
-  background-color: #3b3fc1;
+  background-color: var(--hoverFocus);
 }
 
 @media (min-width: 768px){
@@ -141,12 +152,12 @@ button:hover{
     border-radius: 16px;
     overflow: hidden;
     display: flex;
-    box-shadow: 0 4px 12px rgba(999,999,999,0.2);
+    box-shadow: 0 4px 12px rgba(999,999,999,0.3);
   }
 
   .painel {
     flex: 1;
-    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    background: var(--hoverFocus);
     color: white;
     display: flex;
     flex-direction: column;
@@ -174,7 +185,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
   }
 
   .login-form h2 {

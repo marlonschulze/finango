@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="css/metas.css">
+  
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
   <title>Metas | finango</title>
 </head>
 <body>
-  <header>
+  <header data-aos="fade-down" data-aos-duration="1300">
     <h1>Minhas Metas</h1>
 
     <button class="voltar-inicio" id="voltarInicio">
@@ -21,7 +23,7 @@
     </button>
   </header>
   <main>
-    <section class="metas">
+    <section class="metas" data-aos="zoom-out" data-aos-duration="1500">
       <h3>Criar nova meta</h3>
 
       <input type="text" id="nameMeta" placeholder="Nome da meta" required>
@@ -53,5 +55,11 @@
 
   <script src="js/transacoes.js"></script>
   <script src="js/metas.js"></script>
+
+      <script src="js/finango.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

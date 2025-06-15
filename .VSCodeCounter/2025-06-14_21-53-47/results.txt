@@ -1,0 +1,73 @@
+Date : 2025-06-14 21:53:47
+Directory : c:\Users\user\Desktop\finango
+Total : 40 files,  2777 codes, 38 comments, 498 blanks, all 3313 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| PostCSS    |         13 |      1,592 |         19 |        273 |      1,884 |
+| HTML       |         13 |        858 |          4 |        139 |      1,001 |
+| JavaScript |         13 |        276 |         15 |         55 |        346 |
+| Markdown   |          1 |         51 |          0 |         31 |         82 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                   | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                      |         40 |      2,777 |         38 |        498 |      3,313 |
+| . (Files)                                              |          6 |        307 |          4 |         77 |        388 |
+| css                                                    |          5 |        849 |         19 |        134 |      1,002 |
+| html                                                   |          8 |        602 |          0 |         93 |        695 |
+| js                                                     |          5 |        236 |         15 |         55 |        306 |
+| scripts                                                |          8 |         40 |          0 |          0 |         40 |
+| styles                                                 |          8 |        743 |          0 |        139 |        882 |
++--------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                               | language   | code       | comment    | blank      | total      |
++--------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\user\Desktop\finango\README.md                | Markdown   |         51 |          0 |         31 |         82 |
+| c:\Users\user\Desktop\finango\css\educfinanceira.css   | PostCSS    |        143 |          1 |         24 |        168 |
+| c:\Users\user\Desktop\finango\css\finango.css          | PostCSS    |        254 |         10 |         40 |        304 |
+| c:\Users\user\Desktop\finango\css\metas.css            | PostCSS    |        159 |          2 |         23 |        184 |
+| c:\Users\user\Desktop\finango\css\style.css            | PostCSS    |        162 |          2 |         27 |        191 |
+| c:\Users\user\Desktop\finango\css\transacoes.css       | PostCSS    |        131 |          4 |         20 |        155 |
+| c:\Users\user\Desktop\finango\educfinanceira.html      | HTML       |         69 |          0 |          6 |         75 |
+| c:\Users\user\Desktop\finango\finango.html             | HTML       |         53 |          4 |         10 |         67 |
+| c:\Users\user\Desktop\finango\html\ef.html             | HTML       |         70 |          0 |         12 |         82 |
+| c:\Users\user\Desktop\finango\html\gastos.html         | HTML       |         70 |          0 |         14 |         84 |
+| c:\Users\user\Desktop\finango\html\investimentos.html  | HTML       |         74 |          0 |         12 |         86 |
+| c:\Users\user\Desktop\finango\html\orcamento.html      | HTML       |        101 |          0 |         11 |        112 |
+| c:\Users\user\Desktop\finango\html\organizacao.html    | HTML       |         82 |          0 |         12 |         94 |
+| c:\Users\user\Desktop\finango\html\planejamento.html   | HTML       |         69 |          0 |         12 |         81 |
+| c:\Users\user\Desktop\finango\html\renda.html          | HTML       |         70 |          0 |         12 |         82 |
+| c:\Users\user\Desktop\finango\html\reserva.html        | HTML       |         66 |          0 |          8 |         74 |
+| c:\Users\user\Desktop\finango\index.html               | HTML       |         38 |          0 |         10 |         48 |
+| c:\Users\user\Desktop\finango\js\educfinanceira.js     | JavaScript |         32 |          1 |          8 |         41 |
+| c:\Users\user\Desktop\finango\js\finango.js            | JavaScript |         22 |          1 |          5 |         28 |
+| c:\Users\user\Desktop\finango\js\metas.js              | JavaScript |         92 |         10 |         23 |        125 |
+| c:\Users\user\Desktop\finango\js\script.js             | JavaScript |         31 |          1 |          6 |         38 |
+| c:\Users\user\Desktop\finango\js\transacoes.js         | JavaScript |         59 |          2 |         13 |         74 |
+| c:\Users\user\Desktop\finango\metas.html               | HTML       |         49 |          0 |          8 |         57 |
+| c:\Users\user\Desktop\finango\scripts\ef.js            | JavaScript |          5 |          0 |          0 |          5 |
+| c:\Users\user\Desktop\finango\scripts\gastos.js        | JavaScript |          5 |          0 |          0 |          5 |
+| c:\Users\user\Desktop\finango\scripts\investimentos.js | JavaScript |          5 |          0 |          0 |          5 |
+| c:\Users\user\Desktop\finango\scripts\orcamentos.js    | JavaScript |          5 |          0 |          0 |          5 |
+| c:\Users\user\Desktop\finango\scripts\organizacao.js   | JavaScript |          5 |          0 |          0 |          5 |
+| c:\Users\user\Desktop\finango\scripts\planejamento.js  | JavaScript |          5 |          0 |          0 |          5 |
+| c:\Users\user\Desktop\finango\scripts\renda.js         | JavaScript |          5 |          0 |          0 |          5 |
+| c:\Users\user\Desktop\finango\scripts\reserva.js       | JavaScript |          5 |          0 |          0 |          5 |
+| c:\Users\user\Desktop\finango\styles\ef.css            | PostCSS    |         91 |          0 |         18 |        109 |
+| c:\Users\user\Desktop\finango\styles\gastos.css        | PostCSS    |         91 |          0 |         18 |        109 |
+| c:\Users\user\Desktop\finango\styles\investimentos.css | PostCSS    |         87 |          0 |         15 |        102 |
+| c:\Users\user\Desktop\finango\styles\orcamento.css     | PostCSS    |        126 |          0 |         23 |        149 |
+| c:\Users\user\Desktop\finango\styles\organizacao.css   | PostCSS    |         87 |          0 |         18 |        105 |
+| c:\Users\user\Desktop\finango\styles\planejamento.css  | PostCSS    |         87 |          0 |         15 |        102 |
+| c:\Users\user\Desktop\finango\styles\renda.css         | PostCSS    |         87 |          0 |         15 |        102 |
+| c:\Users\user\Desktop\finango\styles\reserva.css       | PostCSS    |         87 |          0 |         17 |        104 |
+| c:\Users\user\Desktop\finango\transacoes.html          | HTML       |         47 |          0 |         12 |         59 |
+| Total                                                  |            |      2,777 |         38 |        498 |      3,313 |
++--------------------------------------------------------+------------+------------+------------+------------+------------+
